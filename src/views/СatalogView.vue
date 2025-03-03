@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import CardsList from '@/components/CardsList.vue';
-import Search from '@/components/Search.vue';
+import Search from '@/components/elements/Search.vue';
 import { useGetProducts } from '@/use/useGetProducts.ts';
 import { computed, ref, watch } from 'vue';
 import ProductSmallCard from '@/components/ProductSmallCard.vue';

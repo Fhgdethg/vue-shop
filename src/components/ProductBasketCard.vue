@@ -17,11 +17,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import type { IBasketProduct } from '@/store/basket/basket.ts';
-import Button from '@/components/Button.vue';
-import ProductSmallCard from '@/components/ProductSmallCard.vue';
 import { useStore } from 'vuex';
-import ActionButton from '@/components/ActionButton.vue';
+
+import ActionButton from '@/components/elements/ActionButton.vue';
+import Button from '@/components/elements/Button.vue';
+import ProductSmallCard from '@/components/ProductSmallCard.vue';
+
+import type { IBasketProduct } from '@/store/basket/basket.ts';
 
 export default defineComponent({
   components: { ActionButton, ProductSmallCard, Button },

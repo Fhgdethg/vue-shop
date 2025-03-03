@@ -8,12 +8,13 @@
 </template>
 
 <script setup lang="ts">
-import Link from '@/components/Link.vue';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
+import Link from '@/components/elements/Link.vue';
 import NumberCircle from '@/components/ui/NumberCircle.vue';
 
 import { routes } from '@/router/routes.ts';
-import { computed } from 'vue';
-import { useStore } from 'vuex';
 
 const store = useStore();
 const totalCount = computed(() =>

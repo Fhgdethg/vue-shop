@@ -22,11 +22,14 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IProduct } from '@/types/product.ts';
-import Button from '@/components/Button.vue';
 import { useRouter } from 'vue-router';
-import { routes } from '@/router/routes.ts';
 import { useStore } from 'vuex';
+
+import Button from '@/components/elements/Button.vue';
+
+import { routes } from '@/router/routes.ts';
+
+import { IProduct } from '@/types/product.ts';
 
 export default defineComponent({
   components: { Button },
@@ -46,7 +49,6 @@ export default defineComponent({
     const store = useStore();
 
     function moreInformation() {
-      console.log(product);
       router.push(`${routes.catalog}/${product.id}`);
     }
 

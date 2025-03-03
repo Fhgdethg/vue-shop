@@ -1,19 +1,6 @@
 <template>
-  <p class="error" v-if="isError">Loading error</p>
+  <p class="error">Loading error</p>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  props: {
-    isError: {
-      type: Boolean,
-      required: true,
-    },
-  },
-});
-</script>
 
 <style lang="scss">
 .error {

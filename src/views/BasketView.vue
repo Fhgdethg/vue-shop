@@ -21,7 +21,7 @@ import CardsList from '@/components/CardsList.vue';
 import ProductBasketCard from '@/components/ProductBasketCard.vue';
 import { useStore } from 'vuex';
 import { computed } from 'vue';
-import Button from '@/components/Button.vue';
+import Button from '@/components/elements/Button.vue';
 
 const store = useStore();
 const basketProducts = computed(() => store.state.basket.products);

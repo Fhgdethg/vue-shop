@@ -1,5 +1,5 @@
 <template>
-  <ErrorNotification :is-error="isError" />
+  <ErrorNotification v-if="isError" />
   <Spinner v-if="isLoading" class-name="loader" />
   <div class="cards">
     <slot />

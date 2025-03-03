@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import Logo from '@/components/ui/Logo.vue';
-import Link from '@/components/Link.vue';
+import Link from '@/components/elements/Link.vue';
 import BasketLink from '@/components/BasketLink.vue';
 
 import { routes } from '@/router/routes.ts';

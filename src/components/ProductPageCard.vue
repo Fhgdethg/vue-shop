@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <Spinner v-if="isLoading" />
-    <ErrorNotification :is-error="isError" />
+    <ErrorNotification v-if="isError" />
     <div class="cardInner" v-if="product">
       <div class="productImages">
         <img
@@ -33,13 +33,15 @@
 </template>
 
 <script setup lang="ts">
-import { useGetProductById } from '@/use/useGetProductById.ts';
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import Button from '@/components/Button.vue';
+import {useStore} from "vuex";
+
+import Button from '@/components/elements/Button.vue';
 import ErrorNotification from "@/components/ui/ErrorNotification.vue";
 import Spinner from "@/components/ui/Spinner.vue";
-import {useStore} from "vuex";
+
+import { useGetProductById } from '@/use/useGetProductById.ts';
 
 const router = useRouter();
 const route = useRoute();
