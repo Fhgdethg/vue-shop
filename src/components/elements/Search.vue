@@ -2,7 +2,7 @@
   <input
     :value="inputVal"
     @input="handleInput"
-    :class="`search ${cl || ''}`"
+    :class="['search', { cl }]"
     :placeholder="placeholder || 'Search'"
   />
 </template>

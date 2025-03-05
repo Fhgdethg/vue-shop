@@ -21,6 +21,7 @@ const router = createRouter({
       path: routes.basket,
       component: () => import('../views/BasketView.vue'),
     },
+    { path: routes.notFound, redirect: routes.catalog },
   ],
   linkActiveClass: 'linkActive',
   linkExactActiveClass: 'linkExactActive',

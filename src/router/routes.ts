@@ -3,4 +3,5 @@ export const routes = {
   root: '/',
   basket: '/basket',
   productId: '/:productId',
+  notFound: '/:pathMatch(.*)*',
 };
